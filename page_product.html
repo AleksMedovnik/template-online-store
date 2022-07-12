@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="./style.css">
+    <link rel="icon"
+        type="image/png"
+        href="./images/cart.png" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"
+        defer></script>
+    <title>MasterGaming</title>
+</head>
+
+<body class="min-vh-100 d-flex flex-column justify-content-between">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-info"
+                    href="#">MasterGaming</a>
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul id="menu"
+                        class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                aria-current="page"
+                                href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">Теги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#">Магазин</a>
+                        </li>
+                        <li class="open-cart">
+                            <button type="button"
+                                class="open-cart__icon"
+                                id="cart-open"
+                                data-bs-toggle="modal"
+                                data-bs-target="#cart">
+                            </button>
+                            <span id="cart-count"
+                                class="open-cart__count">0</span>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success"
+                            type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5 mb-5 pt-3">
+        <main>
+            <div class="card mb-3 page-product">
+                <img src="https://game-roblox.ru/wp-content/uploads/2018/12/render_chibi_mio0001.jpeg"
+                    class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title page-product__title">Roblox Skin</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aliquam cum
+                        neque aperiam pariatur reprehenderit perferendis earum minus nisi quas minima doloremque
+                        consectetur in mollitia praesentium, voluptatum iure laboriosam eius molestiae provident
+                        quisquam facere deserunt voluptatibus omnis. Facere, reiciendis? Dolorem ab aspernatur numquam
+                        aut, eligendi beatae? Quaerat eveniet modi tempora dolores qui velit, dignissimos nihil possimus
+                        atque enim sunt voluptatem molestias cumque odit quidem porro veniam laborum? Accusantium
+                        assumenda quas ipsa harum, ut soluta modi excepturi ipsam cupiditate ad nihil doloremque
+                        corporis architecto commodi libero incidunt deleniti voluptatibus id at tempora! Rerum similique
+                        inventore quam blanditiis aut, consectetur doloribus placeat repudiandae cumque natus
+                        consequuntur sit neque officia possimus asperiores odio enim, perferendis amet reiciendis!
+                        Nulla, suscipit id voluptas voluptatibus vitae iste natus facilis iure dolor maxime at
+                        consequuntur quae ducimus explicabo ut aperiam dolore magni modi. Quos ducimus delectus eligendi
+                        modi a minus laudantium ad ut mollitia iure repellendus dignissimos, at eaque non! Nostrum
+                        sapiente officia dignissimos corrupti nemo iure in, quod vel incidunt quidem facere. Aperiam ad
+                        dolores inventore veniam dolor laborum expedita explicabo, esse deleniti similique aut accusamus
+                        recusandae natus maxime, quidem nobis modi atque accusantium. Quasi similique iusto sunt,
+                        laudantium distinctio placeat ex illum officia deleniti qui officiis impedit nemo aliquam
+                        tempore reiciendis minus voluptatibus tempora omnis ea! Non quos autem illo modi corporis. Optio
+                        id dolorum aut totam iusto atque impedit nulla quia, veniam dolorem blanditiis velit doloremque
+                        nobis et, voluptates enim architecto, vel fuga. Consequuntur suscipit nam architecto veritatis
+                        laboriosam facere cum necessitatibus itaque repellat, ipsum neque vero numquam doloremque
+                        reiciendis. Placeat error voluptatibus culpa corrupti ullam non? Totam facere veniam quidem
+                        saepe magnam ipsum perspiciatis culpa exercitationem, iusto quaerat vero vitae doloremque
+                        aspernatur aut rerum, eum tempore, dolorum id provident commodi. Eveniet at quisquam impedit
+                        maxime nam, atque, vitae vero architecto beatae ratione suscipit?</p>
+                    <p class="card-text fs-5">Цена: <span class="page-product__price">1</span>₿</p>
+                    <button type="button"
+                        class="btn btn-info"
+                        id="product-add"
+                        data-id="1">
+                        Добавить в корзину
+                    </button>
+                    <button type="button"
+                        class="btn btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderBuy">
+                        Купить сейчас
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Modal Cart -->
+    <div class="modal fade"
+        id="cart"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"
+                        id="exampleModalLabel">Корзина</h5>
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div id="modal-body"
+                    class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button"
+                        id="cart-clear-btn"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">Очистить корзину</button>
+                    <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Order -->
+    <div class="modal fade"
+        id="orderBuy"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1"
+                                class="form-label">Email адрес</label>
+                            <input type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp"
+                                class="form-text">
+                                Мы никогда не передадим вашу электронную почту кому-либо еще.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1"
+                                class="form-label">Пароль</label>
+                            <input type="password"
+                                class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary">Заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="height: 100px; background-color: rgb(6, 6, 6);"
+        class="footer d-flex justify-content-center align-items-center">
+        <p class="text-white">Copyright © MasterGaming. Любое копирование запрещено</p>
+    </footer>
+</body>
+
+</html>
